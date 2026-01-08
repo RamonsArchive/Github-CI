@@ -2,6 +2,8 @@
 import React from "react";
 import { useState } from "react";
 import Ramon from "./ramon";
+import Ailyn from "./ailyn";
+import Jiyoon from "./jiyoon";
 
 const InputOutput = () => {
   const [message, setMessage] = useState<string>("");
@@ -61,6 +63,8 @@ const InputOutput = () => {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
         <Ramon />
+        <Ailyn />
+        <Jiyoon />
       </div>
     </section>
   );
