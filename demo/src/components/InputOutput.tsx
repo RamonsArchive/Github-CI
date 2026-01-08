@@ -24,6 +24,17 @@ const InputOutput = () => {
 
   return (
     <section className="flex flex-col w-full gap-5">
+      <div className="flex flex-col w-full max-h-[200px] min-h-[200px] h-full bg-slate-900 p-2 rounded-xl overflow-y-auto">
+        {history.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-row w-full gap-1 bg-slate-900 p-2 rounded-xl"
+          >
+            <p className="text-sm text-slate-100">{index + 1}.</p>
+            <p className="text-sm text-slate-100">{item}</p>
+          </div>
+        ))}
+      </div>
       <div className="flex w-full gap-2 bg-slate-900 p-2 rounded-xl">
         <input
           type="text"
