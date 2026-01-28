@@ -1,14 +1,11 @@
-import React, { Suspense } from "react";
-import { cacheLife } from "next/cache"
-
+import React from "react";
 
 const DynamicMessage = async () => {
   // "use cache";
   // cacheLife("seconds")
-  
 
-  const message = await new Promise<string>((resolve) =>
-    setTimeout(() => resolve("Hello World"), 5000) // 5 second delay
+  const message = await new Promise<string>(
+    (resolve) => setTimeout(() => resolve("Hello World"), 5000), // 5 second delay
   );
 
   return (
@@ -18,6 +15,6 @@ const DynamicMessage = async () => {
       </h3>
     </div>
   );
-}
+};
 
 export default DynamicMessage;

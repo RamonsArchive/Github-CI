@@ -1,5 +1,4 @@
-import React, { Suspense } from "react";
-import { cacheLife } from "next/cache"
+import React from "react";
 
 const DynamicMessage = async () => {
   // "use cache";

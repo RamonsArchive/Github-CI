@@ -26,10 +26,16 @@ const Home = () => {
         </div>
         <InputOutput />
         <div className="flex flex-row w-full gap-3">
-          <Link href="/cache-example" className="text-slate-100 py-2 px-4 rounded-md bg-blue-500/40">
+          <Link
+            href="/cache-example"
+            className="text-slate-100 py-2 px-4 rounded-md bg-blue-500/40"
+          >
             Link to Cache Example
           </Link>
-          <Link href="/error-example" className="text-slate-100 py-2 px-4 rounded-md bg-blue-500/40">
+          <Link
+            href="/error-example"
+            className="text-slate-100 py-2 px-4 rounded-md bg-blue-500/40"
+          >
             Link to Error Example
           </Link>
         </div>
