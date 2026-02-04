@@ -1,6 +1,6 @@
 import Image from "next/image";
 import InputOutput from "../components/InputOutput";
-import Link from "next/link";
+import FetchDataButton from "../components/FetchDataButton";
 
 const Home = () => {
   return (
@@ -22,22 +22,11 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col w-full max-w-3xl">
-          <h1 className="text-4xl font-bold">Lesson 1: Github & CI/CD</h1>
+          <h1 className="text-4xl font-bold">Lesson 4: Server Actions & API Routes</h1>
         </div>
         <InputOutput />
         <div className="flex flex-row w-full gap-3">
-          <Link
-            href="/cache-example"
-            className="text-slate-100 py-2 px-4 rounded-md bg-blue-500/40"
-          >
-            Link to Cache Example
-          </Link>
-          <Link
-            href="/error-example"
-            className="text-slate-100 py-2 px-4 rounded-md bg-blue-500/40"
-          >
-            Link to Error Example
-          </Link>
+          <FetchDataButton />
         </div>
       </div>
     </main>
