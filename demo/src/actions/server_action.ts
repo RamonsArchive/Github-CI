@@ -5,13 +5,25 @@ export const serverAction = async () => {
     try {
         // permissions
         // rate limiting
-        const response = await fetch("https://jsonplaceholder.typicode.com/posts")
-        const data = await response.json()
+        const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+        const data = await res.json()
 
-        return { success: true, data }
+        return { status: "SUCCESS", error: "", data }
 
     } catch (error) {
         console.error(error)
-        return { error: "Failed to fetch data" }
+        return { status: "ERROR", error: "Failed to fetch data", data: null }
+    }
+}
+
+export const fetchCat = async () => {
+    try {
+        const res = await fetch("https://api.thecatapi.com/v1/images/search")
+        const data = await res.json()
+        return { status: "SUCCESS", error: "", data }
+
+    } catch (error) {
+        console.error(error)
+        return { status: "ERROR", error: "Failed to fetch cat", data: null }
     }
 }

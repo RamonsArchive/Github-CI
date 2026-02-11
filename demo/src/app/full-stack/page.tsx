@@ -1,8 +1,8 @@
-import Image from "next/image";
-import InputOutput from "../components/InputOutput";
-import Link from "next/link";
+import React from 'react'
+import Image from 'next/image'
+import FetchDataButton from '@/src/components/FetchDataButton'
 
-const Home = () => {
+const FullStackPage = () => {
   return (
     <main className="flex min-h-screen w-full font-sans bg-slate-950">
       <div className="flex flex-col w-full gap-3 max-w-3xl mx-auto py-10 md:py-20 px-5 sm:px-20">
@@ -24,13 +24,13 @@ const Home = () => {
         <div className="flex flex-col w-full max-w-3xl">
           <h1 className="text-4xl font-bold">Lesson 5: Full Stack Development</h1>
         </div>
-        <InputOutput />
+       
         <div className="flex flex-row w-full gap-3">
-          <Link href="/full-stack" className="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600" target="_blank">Full Stack</Link>
+          <FetchDataButton />
         </div>
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default Home;
+export default FullStackPage

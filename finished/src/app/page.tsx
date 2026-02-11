@@ -1,6 +1,6 @@
 import Image from "next/image";
 import InputOutput from "../components/InputOutput";
-import FetchDataButton from "../components/FetchDataButton";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -22,11 +22,11 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col w-full max-w-3xl">
-          <h1 className="text-4xl font-bold">Lesson 4: Server Actions & API Routes</h1>
+          <h1 className="text-4xl font-bold">Lesson 5: Full Stack Development</h1>
         </div>
         <InputOutput />
         <div className="flex flex-row w-full gap-3">
-          <FetchDataButton />
+          <Link href="/full-stack" className="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600" target="_blank">Full Stack</Link>
         </div>
       </div>
     </main>
